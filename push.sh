@@ -1,5 +1,5 @@
 mvn clean
 git add .
-git commit -m "UAT"
-git push -u origin 0.0.1-UAT
+git commit -m "master"
+git push -u origin master
 git status
