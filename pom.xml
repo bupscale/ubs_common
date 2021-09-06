@@ -20,8 +20,10 @@
 		<jdk.version>1.8</jdk.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<!--
 		<gpg.keyname>bupscale</gpg.keyname>
 		<gpg.keypass>Cambrien#1357</gpg.keypass>
+		-->
 		<build.plugins.plugin.version>3.8.1</build.plugins.plugin.version>
 	</properties>
 	<dependencies>
@@ -99,6 +101,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!--
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
@@ -120,6 +123,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
@@ -132,6 +136,7 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			-->
 		</plugins>
 	</build>
 
