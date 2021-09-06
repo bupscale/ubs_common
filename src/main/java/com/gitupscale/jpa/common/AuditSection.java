@@ -14,10 +14,6 @@ import javax.persistence.Embeddable;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import org.springframework.data.annotation.CreatedBy;
-import org.springframework.data.annotation.LastModifiedBy;
-import org.springframework.data.annotation.LastModifiedDate;
-
 @Embeddable
 public class AuditSection implements Serializable {
 
@@ -26,14 +22,11 @@ public class AuditSection implements Serializable {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createdOn;
 
-	@CreatedBy
 	private String createdBy;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@LastModifiedDate
 	private Date modifiedOn;
 
-	@LastModifiedBy
 	private String modifiedBy;
 
 	public AuditSection() {

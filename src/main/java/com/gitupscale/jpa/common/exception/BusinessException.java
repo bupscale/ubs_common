@@ -2,14 +2,10 @@ package com.gitupscale.jpa.common.exception;
 
 import java.util.Map;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 //import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 //@JsonIgnoreProperties(ignoreUnknown = true, value = { "cause", "suppressed", "stackTrace", "localizedMessage" })
 public class BusinessException extends Exception {
-	protected final Logger logger = LoggerFactory.getLogger(getClass());
 
 	private static final long serialVersionUID = 1L;
 	private String errorCode;
@@ -43,8 +39,6 @@ public class BusinessException extends Exception {
 			this.model = model;
 		} catch (Exception e) {
 			this.model = model;
-			logger.warn(
-					"Very likely the model passed to the BusinessException constructor misses important keys: errorCode | httpStatus | message.");
 		}
 
 	}

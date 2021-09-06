@@ -23,7 +23,7 @@ public class AuditListener {
 	 * Executed before the entity manager persist operation is actually executed or
 	 * cascaded. This call is synchronous with the persist operation.
 	 * 
-	 * @param o
+	 * @param  o  the object to persist
 	 */
 	@PrePersist
 	public void onSave(Object o) {
@@ -42,7 +42,7 @@ public class AuditListener {
 	/**
 	 * Executed before the database UPDATE operation.
 	 * 
-	 * @param o
+	 * @param  o  the object to update
 	 */
 	@PreUpdate
 	public void onUpdate(Object o) {
@@ -62,7 +62,7 @@ public class AuditListener {
 	 * Executed before the entity manager remove operation is actually executed or
 	 * cascaded. This call is synchronous with the remove operation.
 	 * 
-	 * @param o
+	 * @param o  the object to remove
 	 */
 	@PreRemove
 	public void preRemove(Object o) {
@@ -80,7 +80,7 @@ public class AuditListener {
 	 * Executed after the entity manager persist operation is actually executed or
 	 * cascaded. This call is invoked after the database INSERT is executed.
 	 * 
-	 * @param o
+	 * @param o  the object to process post persist
 	 */
 	@PostPersist
 	public void postPersist(Object o) {
@@ -98,7 +98,7 @@ public class AuditListener {
 	 * Executed after the entity manager remove operation is actually executed or
 	 * cascaded. This call is synchronous with the remove operation.
 	 * 
-	 * @param o
+	 * @param o  the object to remove post remove
 	 */
 	@PostRemove
 	public void postRemove(Object o) {
@@ -115,7 +115,7 @@ public class AuditListener {
 	/**
 	 * Executed after the database UPDATE operation.
 	 * 
-	 * @param o
+	 * @param o  the object to update post processing
 	 */
 	@PostUpdate
 	public void postUpdate(Object o) {
@@ -133,7 +133,7 @@ public class AuditListener {
 	 * Executed after an entity has been loaded into the current persistence context
 	 * or an entity has been refreshed.
 	 * 
-	 * @param o
+	 * @param o  the object to post load
 	 */
 	@PostLoad
 	public void postLoad(Object o) {
