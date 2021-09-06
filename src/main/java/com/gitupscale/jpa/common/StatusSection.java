@@ -52,6 +52,9 @@ public class StatusSection implements Serializable {
 	
 	@Enumerated(EnumType.STRING)
 	private Status status;
+	
+	@Column(columnDefinition = "boolean", nullable = true)
+	private Boolean updateRequired;
 
 	public StatusSection() {
 
@@ -127,6 +130,46 @@ public class StatusSection implements Serializable {
 
 	public void setStatus(Status status) {
 		this.status = status;
+	}
+
+	public Boolean getUpdateRequired() {
+		return updateRequired;
+	}
+
+	public void setUpdateRequired(Boolean updateRequired) {
+		this.updateRequired = updateRequired;
+	}
+
+	public Boolean getActive() {
+		return active;
+	}
+
+	public Boolean getEnabled() {
+		return enabled;
+	}
+
+	public Boolean getDeleted() {
+		return deleted;
+	}
+
+	public Boolean getLocked() {
+		return locked;
+	}
+
+	public Boolean getSuspended() {
+		return suspended;
+	}
+
+	public Boolean getBlocked() {
+		return blocked;
+	}
+
+	public Boolean getTerminated() {
+		return terminated;
+	}
+
+	public Boolean getClosed() {
+		return closed;
 	}
 
 }
