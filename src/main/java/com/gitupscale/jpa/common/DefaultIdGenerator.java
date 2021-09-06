@@ -6,13 +6,9 @@ import java.util.UUID;
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.id.IdentifierGenerator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class DefaultIdGenerator implements IdentifierGenerator {
-	
-	protected Logger logger = LoggerFactory.getLogger(getClass());
-	
+		
 	@Override
 	public Serializable generate(SharedSessionContractImplementor session, Object object) throws HibernateException {
 
