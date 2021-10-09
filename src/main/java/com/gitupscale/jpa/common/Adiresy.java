@@ -16,6 +16,12 @@ public class Adiresy implements Serializable {
 
 	private static final long serialVersionUID = -9012031141772035145L;
 
+	/**
+	 * Localisation administrative: Fokontany/Commune/District/Region
+	 * This will be deprecated later on, in favour of the Federation approach
+	 * */
+	private String adminLocation;
+	
 	private String lot;
 	
 	private String rue;
@@ -34,6 +40,14 @@ public class Adiresy implements Serializable {
 
 	public void setRue(String rue) {
 		this.rue = rue;
+	}
+
+	public String getAdminLocation() {
+		return adminLocation;
+	}
+
+	public void setAdminLocation(String adminLocation) {
+		this.adminLocation = adminLocation;
 	}
 
 }
