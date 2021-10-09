@@ -6,4 +6,6 @@ COPY . /apps/mplay/ubs_common
 
 WORKDIR /apps/mplay/ebet/ubs_common
 
-ENTRYPOINT ["mvn","clean","install"]
+RUN mvn clean install
+
+#ENTRYPOINT ["mvn","clean","install"]
