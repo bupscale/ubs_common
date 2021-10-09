@@ -4,7 +4,7 @@ RUN mkdir -p /apps/mplay/ubs_common
 
 COPY . /apps/mplay/ubs_common
 
-WORKDIR /apps/mplay/ebet/ubs_common
+WORKDIR /apps/mplay/ubs_common
 
 RUN mvn clean install
 
